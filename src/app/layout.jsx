@@ -3,6 +3,7 @@ import "./globals.css";
 import localFont from "next/font/local";
 import { ThemeProvider } from "next-themes";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 // Custom fonts
 const geistSans = localFont({
@@ -33,6 +34,8 @@ export default function RootLayout({ children }) {
           <Header />
           {children}
         </ThemeProvider>
+                  <Footer/>
+
       </body>
     </html>
   );
